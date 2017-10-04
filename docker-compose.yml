@@ -1,0 +1,11 @@
+version: "2"
+
+services: 
+  web:
+    build: .
+    command: nodemon --debug 3001
+    volumes:
+      - .:/code
+    ports:
+      - "3000:3000"
+      - "3001:3001"
